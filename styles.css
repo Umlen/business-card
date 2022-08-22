@@ -1,0 +1,76 @@
+body {
+    margin: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2.5px
+}
+
+@keyframes github-link-show {
+    from {opacity: 0;}
+    50% {opacity: 50%;}
+    to {opacity: 100%;}
+}
+
+.avatar {
+    width: 150px;
+    height: auto;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px 3px #a3a3a3;
+}
+
+.card {
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #e5e5e5;
+    border-bottom: 6px solid #a3a3a3;
+    border-radius: 10px 10px 0 0;
+    color: #272727;
+    text-align: center;
+}
+
+.card:hover {
+    border-color: #990100;
+}
+
+.card:hover .github-link {
+    animation: github-link-show 2s 1;
+    animation-fill-mode: forwards;
+}
+
+.github-link {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: smaller;
+    text-decoration: none;
+    color: #b90504;
+    opacity: 0;
+}
+
+.github-link:hover {
+    text-decoration: underline dashed;
+    text-underline-position: under;
+    color: #990100;
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
+/*
+Final challenge:
+Download the code to your local computer and place it
+in a folder called "business-card"
+*/
